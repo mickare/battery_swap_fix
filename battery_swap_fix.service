@@ -1,0 +1,13 @@
+[Unit]
+Description=Power Supply Hotfix service
+After=multi-user.target system76-power.service tlp.service
+Before=shutdown.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/usr/local/bin/battery_swap_fix.sh
+ExecStop=/usr/local/bin/battery_swap_fix.sh 0
+
+[Install]
+WantedBy=multi-user.target sleep.target
