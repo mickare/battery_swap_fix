@@ -1,5 +1,5 @@
 [Unit]
-Description=Power Supply Hotfix service
+Description=Battery Swap Fix service
 After=multi-user.target system76-power.service tlp.service
 Before=shutdown.target
 
