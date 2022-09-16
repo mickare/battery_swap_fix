@@ -1,5 +1,10 @@
 # Battery Swap Fix (Linux) for Lenovo T470s
 
+> **Not needed anymore!**
+>
+> Please use the latest firmware to fix the battery issue.
+> See: https://gitlab.freedesktop.org/upower/upower/-/issues/62
+
 Scripts to automatically set `charge_start_threshold` to reasonable values, so the batteries are charged and switched correctly.
 
 ## Background
